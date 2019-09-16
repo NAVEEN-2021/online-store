@@ -1,0 +1,142 @@
+body{
+    background-color: rgb(238, 171, 171);
+}
+h1{
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: "Avant Garde", "Century Gothic", "AppleGothic", sans-serif;
+    font-size: 50px;
+    text-shadow: 4px 4px 0px #d5d5d5cc, 7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+.cart-top-info{
+    background-color:none; 
+    float: left;
+    color: rgba(0, 0, 0, 0.836);
+    border-bottom:2px solid black;
+    
+}
+#cti1,#cti2,#cti3,#cti4{
+    left : 4px;
+    padding-left:4px;
+    padding-top:4px;
+    padding-bottom:4px;
+    margin-right: 200px;
+    float:left;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    background-color: none;
+    /* border: 5px  rgb(247, 247, 247); */
+    text-shadow: 1px 1px 1px ;
+    color: rgb(35, 21, 230);
+}
+.prod-info{
+    height: 240px;
+    width:94%;
+    background-color: rgb(104, 231, 178);
+    margin-top: 130px;
+    margin-bottom: 5px;
+}
+.prod-info img{
+    height:220px;
+    width:220px;
+    background-color:black; 
+    margin-left:7px;
+    margin-top:9px;
+}
+.prod-info img,.price,.qty,.name,.edit{
+    float:left;
+    color:white;
+    text-align: center;
+}
+
+.price{
+    height:220px;
+    width:220px;
+    background-color:rgb(24, 127, 223); 
+    margin-left:50px;
+    margin-top:9px;
+    font-size: 50px;
+}
+.name{
+    height:220px;
+    width:280px;
+    background-color:rgb(226, 135, 15);
+    margin-left:7px;
+    margin-top:9px;
+    font-size: 50px;
+}
+.qty{
+    height:220px;
+    width:220px;
+    background-color:rgb(230, 32, 32); 
+    margin-left:20px;
+    margin-top:9px;
+    font-size: 50px;
+}
+.checkout{
+    height:190px;
+    width:300px;
+    background-color: coral;
+    margin-top: 20px;
+    
+}
+#total{
+    position: relative;
+    padding-top: 30px;
+    font-size:40px;
+    padding-left:10px;
+    overflow: auto;
+}
+#checkout{
+    border: none;
+    background-color: crimson;
+    padding: 15px;
+    font-size: 20px;
+    margin-left:70px;
+    box-shadow: 3px 3px 3px 
+}
+#checkout:hover{
+    background-color: rgb(226, 11, 11);
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+    letter-spacing: 2px;
+    transition-timing-function: ease-in-out;
+}
+.edit{
+    height: 220px;
+    width:150px;
+    background-color: rgba(243, 83, 182, 0.103);
+    margin-left: 39px;
+    margin-top: 9px; 
+}
+.remove,.goback{
+    float: left;
+    position: relative;
+    height: 50%;
+    width: 100%;
+    
+}
+#remove,#goback{
+    border: none;
+    position: relative;
+    padding:17px 25px;
+    margin-top: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+#remove{
+    background-color: lightseagreen;  
+    color: rgb(0, 0, 0);
+}
+#goback{
+    background-color: rgb(231, 217, 18);
+    color: rgb(20, 57, 220); 
+
+}
+#remove:hover,#goback:hover{
+transform: scale(1.1);
+transition-duration: 0.4s;
+box-shadow: 2px 2px 2px rgb(15, 15, 15);
+color:rgb(5, 5, 5);
+}

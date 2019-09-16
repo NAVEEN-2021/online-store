@@ -1,0 +1,90 @@
+<html>
+    <title>Panchatantra</title>
+    <head>
+            <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: rgb(0, 0, 0)
+            }
+        .main-container{
+            margin-top: 75px; 
+                width:700px;
+                height:500px;
+            background-color: rgb(236, 229, 193);
+            margin-left: 300px;
+        }
+        .Image{
+            
+            width:50%;
+            height: 100%;
+            background-color: brown;
+            float: left;
+        }
+        .Image img{
+            position: relative;
+            padding: 60px 50px 50px 50px;
+            width: 250px;
+            shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.082);
+        }
+        .info{
+            background-color: blue;
+            width: 50%;
+            float: left;
+            height: 100%;
+            font-size: 38px;
+            text-align: center;
+            
+        }
+        #p1{
+            font-size: 38px;
+            font-family: 'Bitter', serif;
+        }
+        #c{
+            font-family: 'Bitter', serif;
+            font-size: 30px;
+        }
+        #ip{
+            font-size: 15px;
+            width:100px;
+            height: 50px;
+            text-align: center;
+            font-size: 30px;
+            color:coral;
+            border-color: black;
+        }
+        button{
+            background-color: rgb(226, 55, 175);
+            font-size: 20px;
+            border-radius: 7px;
+            font-weight: bolder;
+        }
+        </style>
+    </head>
+    <body>
+            <script>
+                var x = document.getElementById("ip");
+                function buyfn(){
+                if(x>4)
+                {
+                    window.alert("Select Quantity less than 4");
+                }}
+                function price(x){
+                    document.getElementById("cost").innerHTML= x*90;
+                }</script>
+                
+        <!-- DO some image magnifier thin -->
+        <div class="main-container">
+            <div class="Image">
+                <img src="edu-book-2.jpg" alt="edu-book-2" title="IMO Olympiad workbook">
+            </div>
+            <div class="info">
+                <p id="p1">IMO Olympiad workbook</p><br>
+                <p id="c">Rs.90</p><br>
+                <input id="ip" type="number" placeholder="Qty" name="edu-book-2" 
+                min="1" max="4" oninput="price(this.value)" onchange="price(this.value)">
+                <label><button id="btn" onclick="buyfn()"><b>BUY</b></button></label>
+                <p>Total Price: <span id="cost"></span></p>
+            </div>
+        </div>
+    </body>
+</html>

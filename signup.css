@@ -1,0 +1,110 @@
+body{
+    background-color:rgb(245, 59, 130);
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+.main-c{
+    position: relative;
+    height:600px;
+    width:800px;
+    left:270px;
+    top:9px;
+    
+}
+.img-c{
+    position: relative;
+    width:50%;
+    height:100%;
+    text-align:center;
+    font-weight: bold;
+    font-size: 50px;
+    background-color: blueviolet;
+    float: left;
+}
+.s-c{
+    position: relative;
+    width:50%;
+    height:100%;
+    background-color: black;
+    float: left;
+}
+.form-c{
+    position: relative;
+    margin-top:-20px;
+    left:20px;
+    background-color: #13232f;
+    height:87%;
+    width:90%;
+}
+/* label{
+   position: relative;
+   
+transform:translateY(6px);
+left:13px;
+color:rgba(white,.5);
+transition:all 0.25s ease;
+visibility: hidden;
+
+ font-size:22px;
+
+} */
+label{
+    font-size: 25px;
+    font-weight: bold;
+    color:darkorange;
+    padding:21px;
+    margin-top:0px;
+    
+    /* margin-top: 50px; */
+  
+}
+input{
+    margin-left:26px;
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border:0.1px solid #a0b3b0;
+    background: none;
+    color:floralwhite;
+    margin-top:8px;
+    margin-bottom: 8px;
+    background-image: none;
+}
+input:focus{
+    outline: 0;
+    border: 1px solid rgb(238, 24, 70);
+}
+button{
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    border:0;
+    padding:15px 25px;
+    margin-left: 110px;
+    margin-top: 10px;
+    color:rgb(255, 255, 242);
+    background-color: #E1332D;
+    font-size: 20px;
+    border-radius:0px;
+    font-weight: bold;
+    /* border:0px; */
+}
+
+button:hover{
+        background-color: rgb(243, 81, 41) ;
+        transition: 0.6s ease-in-out;
+        color:rgb(2, 2, 2);
+        /* text-shadow: 6px black; */
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        transform: scaleX(1.1);
+        transition-duration: 0.3s;
+        letter-spacing: 2px;
+        
+}
+#p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    color:cyan;
+    margin-top:2px;
+}

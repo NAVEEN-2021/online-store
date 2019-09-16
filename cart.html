@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <title>Cart
+    </title>
+    <head>
+    <h1>My Cart</h1>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="cart.css">
+    <!-- <style>
+       body{background-color:#eeabab}h1{font-family:"Avant Garde","Century Gothic",AppleGothic,sans-serif;font-size:50px;text-shadow:4px 4px 0 #d5d5d5cc,7px 7px 0 rgba(0,0,0,.2)}.cart-top-info{background-color:none;float:left;color:rgba(0,0,0,.836);border-bottom:2px solid #000}#cti1,#cti2,#cti3,#cti4{left:4px;padding-left:4px;padding-top:4px;padding-bottom:4px;margin-right:200px;float:left;font-size:25px;font-weight:700;font-family:Roboto,sans-serif;background-color:none;text-shadow:1px 1px 1px;color:#2315e6}.prod-info{height:240px;width:94%;background-color:#68e7b2;margin-top:130px;margin-bottom:5px}.prod-info img{height:220px;width:220px;background-color:#000;margin-left:7px;margin-top:9px}.edit,.name,.price,.prod-info img,.qty{float:left;color:#fff;text-align:center}.price{height:220px;width:220px;background-color:#187fdf;margin-left:50px;margin-top:9px;font-size:50px}.name{height:220px;width:280px;background-color:#e2870f;margin-left:7px;margin-top:9px;font-size:50px}.qty{height:220px;width:220px;background-color:#e62020;margin-left:20px;margin-top:9px;font-size:50px}.checkout{height:190px;width:300px;background-color:coral;margin-top:20px}#total{position:relative;padding-top:30px;font-size:40px;padding-left:10px;overflow:auto}#checkout{border:none;background-color:#dc143c;padding:15px;font-size:20px;margin-left:70px;box-shadow:3px 3px 3px}#checkout:hover{background-color:#e20b0b;transform:scale(1.1);transition-duration:.4s;letter-spacing:2px;transition-timing-function:ease-in-out}.edit{height:220px;width:150px;background-color:rgba(243,83,182,.103);margin-left:39px;margin-top:9px}.goback,.remove{float:left;position:relative;height:50%;width:100%}#goback,#remove{border:none;position:relative;padding:17px 25px;margin-top:19px;font-family:Ubuntu,sans-serif;font-size:22px;font-weight:700}#remove{background-color:#20b2aa;color:#000}#goback{background-color:#e7d912;color:#1439dc}#goback:hover,#remove:hover{transform:scale(1.1);transition-duration:.4s;box-shadow:2px 2px 2px #0f0f0f;color:#050505}
+        </style>  -->
+        <script>
+            // $(document).ready(function(){
+            //     $("#checkout").click(function(){
+            //         $("#checkout").css("background-color", "rgb(226, 11, 11)");
+                    
+            //     });
+            // });
+            $(document).ready(function(){
+                $("#remove").mouseover(function(){
+                    $("#remove").text("DELETE");
+                    $("#remove").css(padding,"17px 40px");
+                });
+                $("#remove").mouseleave(function(){
+                    $("#remove").text("REMOVE");
+                    $("#remove").css(padding,"17px 25px");
+                });
+            });
+            </script>
+    </head>
+    <body>
+        <div class="cart-top-info">
+            <p id="cti1">MY Items</p>
+            <p id="cti2">Name</p>
+            <p id="cti3">Quantity</p>
+            <p id="cti4">Price</p>
+        </div>
+        <div class="prod-info">
+            <img src="" alt="image">
+            <div class="name">
+                    <p id="name">NAME</p>
+                </div>
+            <div class="qty">
+                <p id="qty">QTY</p>
+            </div>
+            <div class="price">
+                <p id="price">PRICE</p>
+            </div>
+            <div class="edit">
+            <div class="remove">
+                <button id="remove">REMOVE</button>
+                </div>
+            <div class="goback">
+                <button id="goback">GO-BACK</button>
+            </div>
+            </div>
+       
+        </div>
+        <div class="checkout">
+            <p id="total">TOTAL<span id="total-cost"></span></p>
+            <button id="checkout">CHECK OUT</button>
+        </div>
+    </body>
+
+</html>

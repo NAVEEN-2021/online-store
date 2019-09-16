@@ -1,0 +1,161 @@
+<html>
+    <title>Panchatantra</title>
+    <head>
+            <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <style>
+            body{
+                background-color:rgba(0, 0, 0, 0.363);
+                z-index: 1;
+                /* position: fixed; */
+                animation-name: dropdown;
+            animation-duration: 3s;
+            }
+        .main-container{
+            margin-top: 75px; 
+                width:700px;
+                height:500px;
+            background-color: rgba(255, 255, 255, 0.034);
+            margin-left: 300px;
+            animation-name: dropdown;
+            animation-duration: 0s;
+            position: relative;
+            /* transform: translate(-50%,-50%); */
+
+        }
+        @keyframes dropdown{
+            from{top:-300px;opacity:0}
+            top{top:0px;opacity:1}
+        }
+        .Image{
+            
+            width:50%;
+            height: 100%;
+            background-color: brown;
+            float: left;
+        }
+        .Image img{
+            position: relative;
+            padding: 60px 50px 50px 50px;
+            width: 250px;
+            /* box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.082); */
+        }
+        .info{
+            background-color: rgb(131, 74, 236);
+            width: 50%;
+            float: none;
+            height: 100%;
+            font-size: 38px;
+            text-align: center;
+            display: inline-block;
+            
+        }
+        #p1{
+            font-size: 38px;
+            font-family: 'Bitter', serif;
+        }
+        #c{
+            font-family: 'Bitter', serif;
+            font-size: 30px;
+        }
+        #ip{
+            font-size: 15px;
+            width:100px;
+            height: 50px;
+            text-align: center;
+            font-size: 30px;
+            color:coral;
+            border-color: black;
+        }
+
+        .button1{
+            background-color: rgba(97, 211, 240, 0.774);
+            font-size: 20px;
+            border:none;
+            color: rgb(255, 0, 0);
+            padding:15px 15px 8px 15px;
+            text-align:center;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        #close{
+            position: relative;
+            height: 32px;
+            width: 30px;
+            float: right;
+            bottom:500px;
+            right:0px;
+            text-align: center;
+            color:white;
+            background-color: rgb(14, 13, 13);
+            border:none;
+            border-color: none;
+            font-size: 20px;
+            font-weight: bold;
+            cursor:pointer;
+        }
+        #close:hover{
+            height: 32px;
+            width: 75px;
+            transform: scale(1);
+            transition-duration: 0.3s;
+            
+        }
+        </style>
+        <script>
+                var x = document.getElementById("ip");
+                var z= document.getElementsByClassName("close");
+
+                function buyfn(){
+                if(x>4)
+                {
+                alert("Select Quantity less than 4");
+                }}
+                function price(x){
+                    document.getElementById("cost").innerHTML= x*60;
+                }
+                $(document).ready(function(){
+                        $("#tog").click(function(){
+                            $(".main-container").toggle();
+                        });
+                        $("#close").click(function(){
+                            $(".main-container").hide();
+                            window.location.href = "ex.html";
+                        });
+                        $("#close").mouseover(function(){
+                            $("#close").text("CLOSE");
+                        });
+                        $("#close").mouseleave(function(){
+                            $("#close").text("X");
+                        });
+                });
+                
+                    </script>
+    </head>
+    <body>
+            
+                
+        <!-- DO some image magnifier thin -->
+        <div class="main-container" >
+            <div class="Image">
+                <img src="child-book-1.jpg" alt="child-book-1" title="panchatantra">
+            </div>
+            <div class="info">
+                <p id="p1">Panchatantra</p><br>
+                <p id="c">Rs.60</p><br>
+                <input id="ip" type="number" placeholder="Qty" name="child-book-1" 
+                min="1" max="4" oninput="price(this.value)" onchange="price(this.value)">
+                <label><button class="button1" id="btn" onclick="buyfn()"><b>BUY</b></button></label>
+                <p>Total Price: <span id="cost"></span></p>
+                
+            </div>
+            <div >
+                
+                <button onclick="close()" id="close">X</button>
+                
+              
+            </div>
+        </div>
+        <button id="tog">tog</button>
+    </body>
+</html>

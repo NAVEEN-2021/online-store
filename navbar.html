@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title >Local online store</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+<style>
+      *{background-color:none;
+        
+    }
+.h1{
+    height:70px;
+    width:auto;
+    padding:20px 20px;
+    background-color:rgb(222, 226, 226);
+    font-size: 20px;
+    color:tomato;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+ul {
+  list-style-type: none;
+  margin-top: 5px;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(108, 80, 233);
+  border-radius: 30px;
+}
+
+li {
+  float: left;
+  
+}
+li:last-child{
+    border-right: none;
+}
+
+li.dropdown{
+    display: inline-block;
+}
+li a, .dropdown-a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 50px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 230px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.drop-content a {
+  color: black;
+  padding: 20px 30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.drop-content a:hover {
+background-color: rgb(86, 245, 171);
+border-radius: 0px;
+transform: scale(1.3);
+border-radius: 20px;
+}
+
+.dropdown:hover .drop-content {
+  display: block;
+}
+
+li a:hover  {
+  background-color: rgb(86, 245, 171);
+  transform: scale(1.3);
+  border-radius: 20px;
+}
+/* @media only screen and (max-width: 500px;)
+{
+}
+    
+}
+} */
+    </style>
+</head>
+<body>
+  
+	<div class="h1">
+		<h1 >Welocme to LOS</h1>
+	</div>
+
+	<div class="nav-top-container">
+            <ul >
+                    <li><a href="main-page.html">Home</a></li>
+                    <li class="dropdown"><a href="#" href="javascript:void(0)" class="dropdown-a">Categories</a>
+                        <div class="drop-content">
+                        <a href="#">Groceries</a>
+                        <a href="#">Stationery</a>
+                        <a href="#">Food</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Signup</a></li>
+                    <li style="float:right"><a href="#">About</a></li>
+        </div>
+        </body>
+        </html>
